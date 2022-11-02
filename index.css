@@ -1,12 +1,16 @@
 *{font-family: Arial, Helvetica, sans-serif;}
+
 *{background-color: #e5e5e5;}
+
 h1{background-color: blanchedalmond;
     display: inline; 
     font-style: italic;
     text-align: center;}
+
 li{color: #0000ff; 
     position: relative; 
     background-clip: border-box;}
+
 .firstimage{float: right;
     border: width 20px; 
     border-style: solid;
@@ -14,6 +18,7 @@ li{color: #0000ff;
     display: block;
     margin-left: auto; 
     width: 60%;}
+
 .thirdimage{float: right;
     border: width 100px; 
     border-style: solid;
@@ -21,10 +26,12 @@ li{color: #0000ff;
     display: block; 
     width:60%;
     height: 500px;}
+
 h3{color: rgb(8, 1, 1); 
     font-size: medium; 
     background-color: blanchedalmond;
     text-align: center;}
+
 .box{padding: auto;
     border: #0000ff;
     border-width: 3px; 
