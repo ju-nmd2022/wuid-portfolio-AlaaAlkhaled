@@ -1,0 +1,157 @@
+/*Start Global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/*End Global Rules */
+
+/* Start Media Query*/
+.page {
+    padding:0 15px;
+    margin: 0 auto;
+
+}
+
+/*small screen*/
+@media (min-width: 768px){
+    .page{
+        width: 750px;
+    }
+}
+
+/*medium screen*/
+@media (min-width: 992px){
+    .page{
+        width: 970px;
+    }
+}
+
+/*large screen*/
+@media (min-width: 1200px){
+    .page{
+        width: 1170px;
+    }
+}
+/* End Media Query*/
+
+.nav {
+    background-color: #0077b6; 
+}
+
+.nav .page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li { 
+    padding: 20px ;
+}
+
+/* .nav ul li.active {
+    color: #F2663F;
+    font-size: large;
+    font-weight: bolder;
+} */
+
+
+@media(max-width: 767px){
+    .nav .page{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav ul li {
+        padding: 13px;
+    }
+}
+
+.nav .page ul li,.nav .page ul li a{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.nav .page ul li:hover,.nav .page ul li a:hover {
+    color: #F2663F;
+}
+
+
+section {
+    display: flex;
+    height: calc(100vh - 138px);
+    padding-top: 20px;
+    background-color: #caf0f8;
+    flex-wrap: wrap;
+}
+
+section h3{
+    text-align: center;
+    padding: 20px;
+}
+
+section .text{
+    text-align: center;
+    padding: 10px;
+}
+
+section .pdf{
+    display: flex;
+    width: 60vh;
+    height: 60vh;
+    border: 5px solid yellow;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+
+@media (max-width: 767px){
+    section .text {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    section .text p{
+        margin-top: 15px;
+    }
+}
+
+
+.foot {
+    padding: 20px;
+    background-color: #0077b6;
+}
+
+.foot ul {
+    display: flex;
+    justify-content: center;
+}
+
+.foot ul li {
+    padding: 10px;
+}
