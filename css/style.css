@@ -102,14 +102,48 @@ body{
     color: #F2663F;
 }
 
+
 section {
     height: calc(100vh - 138px);
     padding-top: 30px;
     background-color: #caf0f8;
+    width: 100vw;
 }
 
-.about {
+.about{
     text-align: center;
+    display: flex;
+    background-color: #0077b6;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    animation-name: hello;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes hello{
+    from {
+        background-color: #F2663F;
+        transform:translateX(250px);
+        -webkit-transform:translateX(250px);
+        -moz-transform:translateX(250px);
+        -ms-transform:translateX(250px);
+        -o-transform:translateX(250px);
+}
+    to {
+        opacity: 0.4;
+        background-color: #0077b6;
+}
 }
 
 .aboutMe {
@@ -122,12 +156,12 @@ section .text {
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
-
 }
 
 section .text p {
     width: 500px;
 }
+
 
 section .text img {
     width: 400px;
@@ -137,6 +171,49 @@ section .text img {
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
+}
+
+.animation{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 30px;
+    animation-name: styling;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes styling{
+    0% {
+        color: black;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+
+    60%{
+        color: #F2663F;
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+}
+
+    90%{
+        color: #caf0f8;
+        transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
+        -moz-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+}
 }
 
 @media (max-width: 767px){
